@@ -20,6 +20,7 @@ public class CategoryController {
         return categoryService.getAllCategories();
     }
 
+
     @PostMapping("api/public/categories")
     public String createCategory(@RequestBody Category category) {
         categoryService.createCategory(category);
