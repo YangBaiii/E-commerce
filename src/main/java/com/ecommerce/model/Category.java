@@ -1,19 +1,19 @@
 package com.ecommerce.model;
 
 public class Category {
-    private int categoryId;
+    private Long categoryId;
     private String categoryName;
 
-    public Category(int categoryId, String categoryName) {
+    public Category(Long categoryId, String categoryName) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
     }
 
-    public int getcategoryId() {
+    public Long getCategoryId() {
         return categoryId;
     }
 
-    public void setcategoryId(int categoryId) {
+    public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
 
