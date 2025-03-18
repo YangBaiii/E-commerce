@@ -10,4 +10,9 @@ import java.util.List;
 @NoArgsConstructor
 public class CategoryResponse {
     private List<CategoryDTO> content;
+    private Integer pageNumber;
+    private Integer pageSize;
+    private Long totalElements;
+    private Long totalPages;
+    private boolean lastPage;
 }
