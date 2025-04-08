@@ -1,5 +1,6 @@
 package com.ecommerce.service;
 
+import com.ecommerce.exceptions.APIException;
 import com.ecommerce.model.Product;
 import com.ecommerce.payload.ProductDTO;
 import com.ecommerce.payload.ProductResponse;
@@ -12,7 +13,7 @@ import java.io.IOException;
 public interface ProductService {
     ProductDTO addProduct(Product product, Long categoryId);
 
-    ProductResponse getAllProducts();
+    ProductResponse getAllProducts() throws APIException;
 
     ProductResponse searchByCategory(Long categoryId);
 
