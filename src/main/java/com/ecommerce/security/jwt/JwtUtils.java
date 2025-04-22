@@ -1,4 +1,4 @@
-package com.ecommerce.security;
+package com.ecommerce.security.jwt;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
