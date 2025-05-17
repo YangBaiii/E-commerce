@@ -1,4 +1,4 @@
-package com.ecommerce.utils;
+package com.ecommerce.util;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

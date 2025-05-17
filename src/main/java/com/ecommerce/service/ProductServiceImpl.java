@@ -8,7 +8,7 @@ import com.ecommerce.payload.ProductDTO;
 import com.ecommerce.payload.ProductResponse;
 import com.ecommerce.repositories.CategoryRepository;
 import com.ecommerce.repositories.ProductRepository;
-import com.ecommerce.utils.PageUtils;
+import com.ecommerce.util.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;

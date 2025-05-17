@@ -6,7 +6,7 @@ import com.ecommerce.model.Category;
 import com.ecommerce.payload.CategoryDTO;
 import com.ecommerce.payload.CategoryResponse;
 import com.ecommerce.repositories.CategoryRepository;
-import com.ecommerce.utils.PageUtils;
+import com.ecommerce.util.PageUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
