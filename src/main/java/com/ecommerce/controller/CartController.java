@@ -17,10 +17,12 @@ public class CartController {
 
     @Autowired
     private CartRepository cartRepository;
-    @Autowired
-    private CartService cartService;
+
     @Autowired
     private AuthUtil authUtil;
+
+    @Autowired
+    private CartService cartService;
 
     @PostMapping("/carts/products/{productId}/quantity/{quantity}")
     public ResponseEntity<CartDTO> addProductToCart(@PathVariable Long productId,
@@ -28,6 +30,7 @@ public class CartController {
         CartDTO cartDTO = cartService.addProductToCart(productId, quantity);
         return new ResponseEntity<CartDTO>(cartDTO, HttpStatus.CREATED);
     }
+
     @GetMapping("/carts")
     public ResponseEntity<List<CartDTO>> getCarts() {
         List<CartDTO> cartDTOs = cartService.getAllCarts();
@@ -52,4 +55,13 @@ public class CartController {
 
         return new ResponseEntity<CartDTO>(cartDTO, HttpStatus.OK);
     }
+
+    @DeleteMapping("/carts/{cartId}/product/{productId}")
+    public ResponseEntity<String> deleteProductFromCart(@PathVariable Long cartId,
+                                                        @PathVariable Long productId) {
+        String status = cartService.deleteProductFromCart(cartId, productId);
+
+        return new ResponseEntity<String>(status, HttpStatus.OK);
+    }
 }
+
